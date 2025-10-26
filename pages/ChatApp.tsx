@@ -1,7 +1,7 @@
+import { db, auth } from '../lib/firebase';
 import React, { useState, useEffect } from 'react';
 import { collection, addDoc, onSnapshot, query, Timestamp } from 'firebase/firestore';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged, User as FirebaseUser } from 'firebase/auth';
-import { db, auth } from './firebase';
 
 interface Message {
   id: string;
